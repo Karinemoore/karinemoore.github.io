@@ -6,14 +6,14 @@ description: >-
   en diversas etapas del ciclo de desarrollo de aplicaciones.
 image: /assets/images/main.avif
 main_content: >
-  # 👋 Hello !
+  # Hello !
 
 
-**Je suis Karine Moore, freelance en quête d’un CDI à Nantes.** Je conçois, développe et pilote des projets web accessibles.
-  UX/UI Design | Front-end dev | Gestion de projet | Management d’équipe : je navigue entre toutes ces casquettes, avec le rêve fou de pouvoir un jour exercer toutes mes compétences pour une seule structure.
+  **Je suis Karine Moore, freelance en quête d’un CDI à Nantes.
 
+  Je conçois, développe et pilote des projets web accessibles. **UX/UI Design | Front-end dev | Gestion de projet | Management d’équipe :  je navigue entre toutes ces casquettes avec le rêve fou d’un jour pouvoir exercer toutes mes compétences pour une seule structure.**
 footer: true
-permalink: 
+permalink: /
 ---
 ## Hello World
 
