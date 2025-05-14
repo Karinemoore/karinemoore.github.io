@@ -6,12 +6,18 @@ description: >-
   en diversas etapas del ciclo de desarrollo de aplicaciones.
 image: /assets/images/main.avif
 main_content: >
-  # Hello !
+  # Hello Friend. Hello World.
 
 
-  **Je suis Karine Moore, freelance en quête d’un CDI à Nantes.
+  **Solum remis procul; poenam, corde?** Te quoque facti agros, querorque,
+  excutis
 
-  Je conçois, développe et pilote des projets web accessibles. **UX/UI Design | Front-end dev | Gestion de projet | Management d’équipe :  je navigue entre toutes ces casquettes avec le rêve fou d’un jour pouvoir exercer toutes mes compétences pour une seule structure.**
+  quoque vestigia substricta caelestique posuisset litore: suaque. **Et
+  limine**, et
+
+  nimium nec io diemque vocat spicea et horror licet leto fortuna suis cum.
+  **Lecto viae, quod Naxos tumulos quoque.** Et illo de nati iuvenci oris habet,
+  perdidit parantur! **#Rails #Ruby #Python #HTML #Css #Js #AWS**
 footer: true
 permalink: /
 ---
