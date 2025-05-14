@@ -18,5 +18,5 @@ a.gentle-clicked {
   animation: gentle-bounce 0.3s ease-out; /* Shorter, smoother animation */
 }
 #projects.home-bg-color{
-  background: linear-gradient(135deg, #ffe0ec 0%, #fff4c2 100%);
+  background: linear-gradient(135deg, #f8d67f 0%, #f0a89c 100%);
 }
