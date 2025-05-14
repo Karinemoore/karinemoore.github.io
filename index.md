@@ -9,8 +9,7 @@ main_content: >
   # 👋 Hello !
 
 
-  **Solum remis procul; poenam, corde?** Te quoque facti agros, querorque,
-  excutis
+  **Je suis Karine Moore, freelance en quête d’un CDI à Nantes.
 
   quoque vestigia substricta caelestique posuisset litore: suaque. **Et
   limine**, et
