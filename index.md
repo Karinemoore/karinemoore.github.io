@@ -11,10 +11,9 @@ main_content: >
 
   **Je suis Karine Moore, freelance en quête d’un CDI à Nantes.
 
-  quoque vestigia substricta caelestique posuisset litore: suaque. **Et
-  limine**, et
+  Je conçois, développe et pilote des projets web accessibles.**
 
-  nimium nec io diemque vocat spicea et horror licet leto fortuna suis cum.
+  UX/UI Design, Front-end dev, Gestion de projet, Management d’équipe :  je navigue entre toutes ces casquettes avec le rêve fou d’un jour pouvoir exercer toutes mes compétences pour une seule structure.
   **Lecto viae, quod Naxos tumulos quoque.** Et illo de nati iuvenci oris habet,
   perdidit parantur! **#Rails #Ruby #Python #HTML #Css #Js #AWS**
 footer: true
