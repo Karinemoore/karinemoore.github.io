@@ -14,8 +14,6 @@ main_content: >
   Je conçois, développe et pilote des projets web accessibles.**
 
   UX/UI Design, Front-end dev, Gestion de projet, Management d’équipe :  je navigue entre toutes ces casquettes avec le rêve fou d’un jour pouvoir exercer toutes mes compétences pour une seule structure.
-  **Lecto viae, quod Naxos tumulos quoque.** Et illo de nati iuvenci oris habet,
-  perdidit parantur! **#Rails #Ruby #Python #HTML #Css #Js #AWS**
 footer: true
 permalink: /
 ---
