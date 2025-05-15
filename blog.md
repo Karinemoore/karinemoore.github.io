@@ -3,7 +3,5 @@ layout: blog
 title: Blog
 nav: true
 footer: true
-description: This is the Awesome Jekyll Theme blog section.
+description: Ici, se trouvent les articles que j'écris principalement sur LinkedIn.
 ---
-
-

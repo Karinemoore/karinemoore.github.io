@@ -9,12 +9,8 @@
     </a>
 
     <div class="flex divide-x">
-      {% for page in site.pages %}
-      {% if page.nav %}
-      <div><a class="px-4 hover:text-sky-400 {% if page.url == current_page_url %}font-bold{% endif %}"
-          href="{{ page.url | relative_url }}">{{ page.title | default: page.name }}</a></div>
-      {% endif%}
-      {% endfor %}
+      <div><a class="px-4 hover:text-sky-400 {% if current_page_url == '/projects/' %}font-bold{% endif %}" href="/projects/">Projets</a></div>
+      <div><a class="px-4 hover:text-sky-400 {% if current_page_url == '/blog/' %}font-bold{% endif %}" href="/blog/">Blog</a></div>
 
       {% if site.languages.size > 1 %}
       <div class="language-switcher relative">

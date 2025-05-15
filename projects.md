@@ -1,8 +1,6 @@
 ---
 layout: projects
-title: Projects
+title: Projets
 nav: true
-description: These are example projects in the awesome jekyll theme
+description: Vous trouverez ici certains de mes projets UI, UX ou dev
 ---
-
-
