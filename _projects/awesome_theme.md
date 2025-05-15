@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Accordéon accessible
-image: 'https://picsum.photos/900/400'
+image: '../assets/images/frise.png'
 category: Dev
 tags:
   - Accessibility
