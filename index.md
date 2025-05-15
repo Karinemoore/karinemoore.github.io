@@ -3,7 +3,7 @@ layout: home
 title: Home
 description: >-
   Je conçois, développe et pilote des projets web accessibles.
-image: /assets/images/main.avif
+image: /assets/images/photokarine.jpg
 main_content: |
   **Hello!**
   **Je suis Karine Moore, freelance en quête d’un CDI à Nantes.** Je conçois, développe et pilote des projets web accessibles.  
