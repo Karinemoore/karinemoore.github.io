@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Raleway'],
+      'sans': ['Open Sans'],
       'mulish': ["Mulish"]
     },
     container: {
@@ -26,5 +26,3 @@ module.exports = {
     require('@tailwindcss/typography')
   ],
 }
-
-
