@@ -1,102 +1,35 @@
 ---
 layout: project
-title: Accordéon accessible
-# image: '../assets/images/projets.jpg'
-category: Dev
-tags:
-  - Accessibility
+title: "Accordéon accessible"
+description: "Composant d’accordéon conforme aux standards d’accessibilité ARIA."
 ---
 
-<div class="max-w-2xl mx-auto my-8" id="accessible-accordion">
-  <h2 id="accordion-title" class="text-2xl font-bold mb-4">Exemple d'accordéon accessible</h2>
+<section class="max-w-3xl mx-auto px-4 py-16">
+  <h1 class="text-3xl font-bold mb-4">Accordéon accessible</h1>
+  <p class="text-gray-700 mb-8">Un composant web d’accordéon 100% accessible, respectant les recommandations du W3C. Conçu pour être inclusif, léger, et facile à intégrer.</p>
 
-  {% assign sections = "Présentation|Nunc eleifend dolor vitae lorem dictum rhoncus. Proin id pulvinar turpis, et eleifend quam.,Détails techniques|Nulla odio nisl, sagittis et tortor non, aliquam vestibulum neque. Etiam eu venenatis sem. Morbi ex turpis, dictum sit amet commodo eget, egestas sed felis. In a purus et lacus mollis sagittis.,Accessibilité|Accordéon respectant les critères d’accessibilité WCAG avec navigation clavier, attributs ARIA, et indication d’état." | split: "," %}
-  {% for section in sections %}
-    {% assign parts = section | split: "|" %}
-    {% assign index = forloop.index %}
-    {% assign title = parts[0] %}
-    {% assign content = parts[1] %}
+  <img src="/assets/images/accordeon-demo.png" alt="Démonstration de l'accordéon" class="rounded-xl shadow mb-8">
 
-  <div class="border-b border-gray-300">
-    <button
-      class="accordion-header flex w-full items-center justify-between py-3 px-4 font-semibold hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#99bcc1] transition"
-      aria-expanded="false"
-      aria-controls="section{{ index }}"
-      id="accordion-header-{{ index }}"
-    >
-      <span>{{ title }}</span>
-      <svg class="accordion-icon w-5 h-5 transition-transform duration-200 transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
-      </svg>
-    </button>
-    <div
-      id="section{{ index }}"
-      role="region"
-      aria-labelledby="accordion-header-{{ index }}"
-      class="accordion-panel hidden px-4 pb-4 text-gray-700"
-    >
-      <p>{{ content }}</p>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+  <h2 class="text-xl font-semibold mb-2">Contexte</h2>
+  <p class="text-gray-700 mb-6">
+    Dans le cadre de mon apprentissage de l’accessibilité numérique, j’ai voulu concevoir un accordéon entièrement utilisable au clavier, avec un rôle ARIA correct et une navigation intuitive pour les technologies d’assistance.
+  </p>
 
-<!-- Fenêtre de code à copier -->
-<div class="max-w-2xl mx-auto mt-12 bg-gray-100 rounded-lg shadow p-4 relative" role="region" aria-label="Extrait de code">
-  <button
-    onclick="copyAccordionCode(this)"
-    class="absolute top-2 right-2 text-sm bg-[#99bcc1] text-white px-3 py-1 rounded hover:bg-[#82a3a8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#99bcc1]"
-    aria-label="Copier le code"
-  >
-    Copier
-  </button>
-  <pre class="overflow-x-auto text-sm leading-relaxed"><code id="accordion-code">
-&lt;div id="accessible-accordion"&gt;
-  &lt;button aria-expanded="false" aria-controls="section1"&gt;...&lt;/button&gt;
-  &lt;div id="section1" role="region" aria-labelledby="accordion-header-1"&gt;
-    &lt;p&gt;Contenu...&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  </code></pre>
-</div>
+  <h2 class="text-xl font-semibold mb-2">Démarche</h2>
+  <ul class="list-disc list-inside text-gray-700 mb-6">
+    <li>Structure HTML sémantique</li>
+    <li>Rôles ARIA : <code>aria-expanded</code>, <code>aria-controls</code>, etc.</li>
+    <li>Navigation clavier fluide (tabulation, flèches…)</li>
+    <li>Design simple et responsive avec Tailwind CSS</li>
+  </ul>
 
-<!-- JS: Accordéon + Copier -->
-<script>
-  document.querySelectorAll('#accessible-accordion .accordion-header').forEach(button => {
-    button.addEventListener('click', () => {
-      const expanded = button.getAttribute('aria-expanded') === 'true';
-      const contentId = button.getAttribute('aria-controls');
-      const content = document.getElementById(contentId);
-      const icon = button.querySelector('.accordion-icon');
+  <h2 class="text-xl font-semibold mb-2">Code & démo</h2>
+  <p class="text-gray-700 mb-6">
+    Le code source est disponible sur GitHub, avec une <a href="https://karinemoore.github.io/projects/accord%C3%A9on-accessible.html" class="text-blue-600 underline">démo en ligne ici</a>.
+  </p>
 
-      document.querySelectorAll('#accessible-accordion .accordion-header').forEach(btn => {
-        btn.setAttribute('aria-expanded', 'false');
-        btn.querySelector('.accordion-icon').classList.remove('rotate-180');
-      });
-      document.querySelectorAll('#accessible-accordion .accordion-panel').forEach(panel => {
-        panel.classList.add('hidden');
-      });
-
-      if (!expanded) {
-        button.setAttribute('aria-expanded', 'true');
-        content.classList.remove('hidden');
-        icon.classList.add('rotate-180');
-      }
-    });
-  });
-
-  function copyAccordionCode(button) {
-    const code = document.getElementById("accordion-code").innerText;
-    navigator.clipboard.writeText(code).then(() => {
-      const original = button.innerText;
-      button.innerText = "Copié !";
-      setTimeout(() => button.innerText = original, 2000);
-    });
-  }
-</script>
-
-<style>
-  .accordion-icon.rotate-180 {
-    transform: rotate(180deg);
-  }
-</style>
+  <h2 class="text-xl font-semibold mb-2">Ce que j’ai appris</h2>
+  <p class="text-gray-700">
+    Ce projet m’a permis de renforcer mes compétences en accessibilité et d’approfondir les techniques d’implémentation ARIA. Je l’ai conçu pour être réutilisable dans de futurs projets.
+  </p>
+</section>
