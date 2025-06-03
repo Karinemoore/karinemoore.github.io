@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Accordéon accessible
-image: '../assets/images/projets.jpg'
+# image: '../assets/images/projets.jpg'
 category: Dev
 tags:
   - Accessibility
