@@ -1,28 +1,44 @@
 ---
-layout: default
-title: Accordéon accessible
+layout: project
+title: "Accordéon accessible"
+description: "Composant d’accordéon conforme aux standards d’accessibilité ARIA."
 ---
 
-<section class="container mx-auto py-20 max-w-4xl px-4">
-  <h1 class="text-4xl font-bold mb-6">Accordéon accessible</h1>
-  <p class="text-lg text-gray-700 mb-10 max-w-[75ch]">
-    Ce composant accordéon est conçu pour être totalement accessible au clavier et aux lecteurs d'écran. Il utilise les attributs ARIA et une logique JavaScript légère pour garantir une expérience utilisateur inclusive.
+<section class="max-w-3xl mx-auto px-4 py-16">
+  <h1 class="text-3xl font-bold mb-4">Accordéon accessible</h1>
+  <p class="text-gray-700 mb-8">
+    Un composant web d’accordéon 100% accessible, respectant les recommandations du W3C. Conçu pour être inclusif, léger, et facile à intégrer.
   </p>
 
-  <!-- Aperçu du composant -->
-  <div data-accordion class="space-y-4 mb-12">
+  <img src="/assets/images/accordeon-demo.png" alt="Démonstration de l'accordéon" class="rounded-xl shadow mb-8">
+
+  <h2 class="text-xl font-semibold mb-2">Contexte</h2>
+  <p class="text-gray-700 mb-6">
+    Dans le cadre de mon apprentissage de l’accessibilité numérique, j’ai voulu concevoir un accordéon entièrement utilisable au clavier, avec un rôle ARIA correct et une navigation intuitive pour les technologies d’assistance.
+  </p>
+
+  <h2 class="text-xl font-semibold mb-2">Démarche</h2>
+  <ul class="list-disc list-inside text-gray-700 mb-6">
+    <li>Structure HTML sémantique</li>
+    <li>Rôles ARIA : <code>aria-expanded</code>, <code>aria-controls</code>, etc.</li>
+    <li>Navigation clavier fluide (tabulation, flèches…)</li>
+    <li>Design simple et responsive avec Tailwind CSS</li>
+  </ul>
+
+  <h2 class="text-xl font-semibold mb-4">Démo interactive</h2>
+  <div data-accordion class="space-y-4 mb-10">
     <div>
-      <h2>
+      <h3>
         <button
           data-accordion-trigger
           aria-expanded="false"
           aria-controls="panel1"
           id="accordion1"
-          class="w-full text-left text-xl font-semibold p-4 bg-gray-100 rounded hover:bg-gray-200 transition"
+          class="w-full text-left text-lg font-semibold p-4 bg-gray-100 rounded hover:bg-gray-200 transition"
         >
-          Qu'est-ce qu'un accordéon accessible ?
+          Qu’est-ce qu’un accordéon accessible ?
         </button>
-      </h2>
+      </h3>
       <div
         id="panel1"
         role="region"
@@ -31,23 +47,23 @@ title: Accordéon accessible
         class="p-4 border border-t-0 border-gray-200 rounded-b"
       >
         <p>
-          Un accordéon accessible permet de naviguer à l’aide du clavier, et informe correctement les technologies d’assistance de son état ouvert ou fermé.
+          Un accordéon accessible permet de naviguer à l’aide du clavier et informe correctement les technologies d’assistance de son état ouvert ou fermé.
         </p>
       </div>
     </div>
 
     <div>
-      <h2>
+      <h3>
         <button
           data-accordion-trigger
           aria-expanded="false"
           aria-controls="panel2"
           id="accordion2"
-          class="w-full text-left text-xl font-semibold p-4 bg-gray-100 rounded hover:bg-gray-200 transition"
+          class="w-full text-left text-lg font-semibold p-4 bg-gray-100 rounded hover:bg-gray-200 transition"
         >
           Comment ça fonctionne ?
         </button>
-      </h2>
+      </h3>
       <div
         id="panel2"
         role="region"
@@ -62,10 +78,10 @@ title: Accordéon accessible
     </div>
   </div>
 
-  <!-- Section code (sans bouton copier) -->
-  <div class="bg-gray-50 p-6 rounded-lg shadow overflow-x-auto">
+  <h2 class="text-xl font-semibold mb-2">Code HTML</h2>
+  <div class="bg-gray-50 p-6 rounded shadow mb-10 overflow-x-auto">
     <pre class="text-sm text-gray-800"><code>&lt;div data-accordion&gt;
-  &lt;h2&gt;
+  &lt;h3&gt;
     &lt;button
       data-accordion-trigger
       aria-expanded="false"
@@ -74,12 +90,17 @@ title: Accordéon accessible
     &gt;
       Titre
     &lt;/button&gt;
-  &lt;/h2&gt;
+  &lt;/h3&gt;
   &lt;div id="panel1" role="region" aria-labelledby="accordion1" hidden&gt;
     Contenu
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
   </div>
+
+  <h2 class="text-xl font-semibold mb-2">Ce que j’ai appris</h2>
+  <p class="text-gray-700">
+    Ce projet m’a permis de renforcer mes compétences en accessibilité et d’approfondir les techniques d’implémentation ARIA. Je l’ai conçu pour être réutilisable dans de futurs projets.
+  </p>
 </section>
 
 <script>
