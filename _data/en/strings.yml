@@ -1,15 +1,15 @@
 home:
   contact_me: "Restons en contact"
-  blog_title: "Mes derniers posts"
-  see_more_posts: "Voir plus de posts"
+  blog_title: "Mes derniers articles"
+  see_more_posts: "Lire plus d'articles'"
   projects_title: "Mes derniers projets"
-  see_more_projects: "Voir plus de projets"
+  see_more_projects: "Voir mon portfolio"
 footer:
   title: "Let's keep in touch!"
   description: "Find me on any of these platforms. "
   pages: Pages
 blog:
   read_more: "En voir plus"
-  more_articles: "Plus de posts"
+  more_articles: "Plus d'articles'"
 post:
   share: Partager
